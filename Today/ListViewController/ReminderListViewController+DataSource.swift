@@ -27,6 +27,7 @@ extension ReminderListViewController {
             snapshot.reloadItems(ids)
         }
         dataSource.apply(snapshot)
+        headerView?.progress = progress
     }
     
     func cellRegistrationHandler(cell: UICollectionViewListCell, indexPath: IndexPath, id: Reminder.ID) {
@@ -46,7 +47,6 @@ extension ReminderListViewController {
         
         var backgroundConfiguration = UIBackgroundConfiguration.listGroupedCell()
         backgroundConfiguration.backgroundColor = .todayListCellBackground
-        backgroundConfiguration.cornerRadius = 12
         cell.backgroundConfiguration = backgroundConfiguration
         
         cell.accessibilityCustomActions = [doneButtonAccessibilityAction(for: reminder)]

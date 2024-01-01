@@ -35,7 +35,7 @@ extension Reminder {
             Reminder(
                 title: "Code review", dueDate: Date().addingTimeInterval(14000.0),
                 createdAt: Date().addingTimeInterval(14000.0),
-                notes: "Check tech specs in shared folder", isComplete: true),
+                notes: "Check tech specs in shared folder"),
             Reminder(
                 title: "Pick up new contacts", dueDate: Date().addingTimeInterval(24000.0),
                 createdAt: Date().addingTimeInterval(24000.0),
@@ -43,7 +43,7 @@ extension Reminder {
             Reminder(
                 title: "Add notes to retrospective", dueDate: Date().addingTimeInterval(3200.0),
                 createdAt: Date().addingTimeInterval(3200.0),
-                notes: "Collaborate with project manager", isComplete: true),
+                notes: "Collaborate with project manager"),
             Reminder(
                 title: "Interview new project manager candidate", dueDate: Date().addingTimeInterval(60000.0),
                 createdAt: Date().addingTimeInterval(60000.0), notes: "Review portfolio"),
